@@ -1,0 +1,55 @@
+<ion-content>
+  <ion-label class="title">Taxy up</ion-label>
+  
+  
+  <ion-card class="card">
+  
+
+  <ion-card-content>
+    <ion-card-title>Connexion</ion-card-title>
+    <ion-label class="i1">Veuillez renseigner votre email</ion-label>
+
+
+
+     <ion-item class="input">
+      <ion-input clearInput="true" type="email" placeholder="Email" #email required ></ion-input>
+    </ion-item>
+    <ion-item class="input">
+      <ion-input clearInput="true" type="password" placeholder=" Password" #pas required></ion-input>
+    </ion-item>
+ 
+   <ion-row>
+      <ion-label class="account" [routerLink]="['/','sign-up-email']" (click)="recoverPassword(email)" >Mot de passe oublié?</ion-label>          
+    </ion-row>
+        <ion-row>
+          <ion-label class="account" [routerLink]="['/','sign-up-email']">Créer un compte</ion-label>          
+        </ion-row>
+
+
+      
+
+      <ion-row class="dif"><ion-label >Ou se connecter avec:</ion-label></ion-row>
+      
+<ion-buttons>
+  <ion-fab-button  class="fb" shape="round" fill="outline" (click)="googleLogin()" >
+    <ion-icon class="ic" name="logo-google"></ion-icon> 
+  </ion-fab-button>
+  <ion-fab-button class="fb" shape="round" fill="outline" (click)="appleLogin()"  >
+    <ion-icon class="ic" name="logo-apple-appstore"></ion-icon> 
+  </ion-fab-button>
+  <ion-fab-button class="fb" shape="round" fill="outline" (click)="fbLogin()"  >
+    <ion-icon class="ic" name="logo-facebook"></ion-icon> 
+  </ion-fab-button>
+</ion-buttons>
+        
+
+      
+
+  </ion-card-content>
+</ion-card>
+
+<ion-button  shape="round" fill="outline" class="next" (click)="onPass(email.value, pas.value)" >
+  <ion-icon name="arrow-forward"></ion-icon>
+  Suivant </ion-button>
+</ion-content>
+

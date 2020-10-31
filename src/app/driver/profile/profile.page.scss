@@ -1,0 +1,80 @@
+:root{
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+.title{
+    color: #000000;
+    position: absolute;
+    padding: 0px;
+    margin-left: 70px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 70px;
+
+}
+
+.card{
+height: 920px;
+margin-top: 40px;
+}
+ion-card-title{
+    color: #ebc000;
+    margin-left: -25vh;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+ion-title{
+
+    font-size: 25px;
+    font-family: Georgia, serif;
+}
+
+.i1{
+    color: #3d3d3d;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Georgia, serif;
+
+}
+.input{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    --border-color: #ebc000;
+    
+}
+
+
+
+.but{
+    margin-left: 90px;
+    --border-color:  #ebc000;
+    font-family: Georgia, serif;
+    color:#000000 ;
+    --color-activated:#000000;
+    --background-activated:#fff8d8;
+}
+
+.ic{
+    font-size: 30px;
+    color: black;
+
+}
+
+.ic2{
+    font-size: 60px;
+    color: black;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+.modif{
+    font-size: 15px;
+    color: black;
+    margin-left: 220px;
+}

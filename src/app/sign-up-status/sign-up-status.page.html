@@ -1,0 +1,22 @@
+<div class="ion-page">
+  <ion-content>
+    <ion-label class="title">Taxy up</ion-label>
+  <ion-card>
+    <ion-card-title>Inscription</ion-card-title>
+    <ion-card-subtitle>Veuillez choisir votre statut</ion-card-subtitle>
+  
+    <ion-card-content>
+      <ion-button shape="round" size="large" fill="outline" class="button"[routerLink]="['/','sign-up-email']" (click)="onDriver()">
+        <ion-icon src="/assets/icon/taxi-driver.svg" class="ic"></ion-icon>
+      Conducteur </ion-button>
+      
+  
+      <ion-button shape="round" size="large" fill="outline" class="button2" [routerLink]="['/','sign-up-email']" (click)="onRider()">
+        <ion-icon src="/assets/icon/man.svg" class="ic2"></ion-icon>
+      Passager </ion-button>
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-button shape="round" fill="outline" class="button1" [routerLink]="['/','home']"  >RETOUR</ion-button>
+  </ion-content>
+  </div>

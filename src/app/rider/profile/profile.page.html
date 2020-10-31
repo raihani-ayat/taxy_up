@@ -1,0 +1,51 @@
+<div class="ion-page">
+  <ion-content>
+  
+      <ion-button fill="clear" class="modif" [routerLink]="['/','rider','profile-edit']" > modifier </ion-button>
+  
+  
+  
+    <ion-avatar class="ic2">
+      <ion-icon name="person-circle-sharp" ></ion-icon>
+  </ion-avatar> 
+    <ion-title>{{'.'+currentRider.f_name +' '+ currentRider.l_name}}</ion-title>
+  
+  
+    <ion-card class="card" >
+  
+      <ion-item class="input">
+        <ion-input disabled ="true"  type="text"  >{{currentRider.f_name}}</ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input disabled ="true"  type="text" >{{currentRider.l_name}}</ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input disabled ="true"  type="text" >{{currentRider.tel}}</ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input disabled ="true"  type="text" >{{currentRider.adrs}}</ion-input>
+      </ion-item>
+    </ion-card>
+  
+  </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="['/','rider']">
+          <ion-icon name="home-sharp" class="ic"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-buttons slot="primary">
+        <ion-button >
+          <ion-icon name="person-circle-sharp" class="ic"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-footer>
+  </div>

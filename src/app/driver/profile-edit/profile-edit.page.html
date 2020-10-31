@@ -1,0 +1,88 @@
+<div class="ion-page">
+  <ion-content>
+   
+    <ion-button fill="clear" class="modif" (click)="onSave(prenom.value,nom.value,num.value,permis.value,comp.value,vat.value,numv.value,typev.value,marquev.value,modelev.value,energiev.value,nbr.value,plaque.value)"> Enregistrer </ion-button>
+  
+  
+  
+    <ion-avatar class="ic2">
+      <ion-icon name="person-circle-sharp" ></ion-icon>
+  </ion-avatar> 
+
+  
+    <ion-card class="card">
+  
+  
+       <ion-item class="input">
+        <ion-input clearInput="true" type="text" placeholder="Prénom" #prenom></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Nom" #nom></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input   clearInput="true" type="text" placeholder="N° de télephone" #num></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="N° de permis " #permis></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input   clearInput="true" type="text" placeholder="Compagnie de taxi" #comp></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="N° VAT" #vat></ion-input>
+      </ion-item>
+
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Numéro de véhicule" #numv></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Type de véhicule" #typev></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Marque de véhicule"#marquev></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Modèle de véhicule" #modelev></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Energie du véhicule " #energiev></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="Nombre de sièges" #nbr></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  clearInput="true" type="text" placeholder="N° de la plaque" #plaque></ion-input>
+      </ion-item>
+  
+  
+    </ion-card>
+
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="['/','driver']">
+          <ion-icon name="home-sharp" class="ic"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-buttons slot="primary">
+        <ion-button [routerLink]="['/','driver','profile']">
+          <ion-icon name="person-circle-sharp" class="ic"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-footer>
+  </div>
+

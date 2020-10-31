@@ -1,0 +1,52 @@
+<div class="ion-page">
+  <ion-content>
+    <form [formGroup]="riderForm">
+  
+      <ion-button fill="clear" class="modif" (click)="FormSubmit(first.value,last.value,num.value,adrs.value)" > Enregistrer </ion-button>
+
+  
+
+  
+  
+    <ion-card class="card">
+  
+      
+   
+       <ion-item class="input">
+        <ion-input formControlName="f_name" clearInput="true" type="text" placeholder="Prénom" #first ></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input formControlName="l_name" clearInput="true" type="text" placeholder="Nom" #last></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input  formControlName="tel" clearInput="true" type="text" placeholder="N° de télephone" #num></ion-input>
+      </ion-item>
+  
+      <ion-item class="input">
+        <ion-input formControlName="adrs"  clearInput="true" type="text" placeholder="Addresse " #adrs></ion-input>
+      </ion-item>
+    </ion-card>
+  </form>
+    
+  
+  </ion-content>
+  
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="['/','rider']">
+          <ion-icon name="home-sharp" class="ic"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-buttons slot="primary">
+        <ion-button [routerLink]="['/','rider','profile']">
+          <ion-icon name="person-circle-sharp" class="ic"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-footer>
+  </div>

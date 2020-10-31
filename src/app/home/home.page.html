@@ -1,20 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<div class="ion-page">
+  <ion-content pager="true"  scroll-y="false" >  
+      <ion-slides #slides>
+      <ion-slide class="header1" >
+        <ion-button fill="clear" class="ic2" [routerLink]="['/','login-email']">SE CONNECTER</ion-button>
+         <ion-label class="title"> Taxy up </ion-label>
+  
+         <ion-button fill="solid"  shape="round" class="button" (click)="SlideNext()">
+          SUIVANT</ion-button>
+          
+         
+        
+      </ion-slide>
+  
+      <ion-slide class="header2">
+        <ion-button fill="clear" class="ic2" [routerLink]="['/','login-email']">SE CONNECTER</ion-button>
+        <p class="para">Vous êtes préssés? Pas de panique, avec Taxy up vous pouvez trouver le taxi le lus proche! </p>
+        <ion-button fill="solid"  shape="round" class="button" (click)="SlideNext()" >
+          SUIVANT</ion-button>
+  
+      </ion-slide>
+  
+      <ion-slide class="header3">
+        <ion-button fill="clear" class="ic2" [routerLink]="['/','login-email']">SE CONNECTER</ion-button>
+        <p class="para">Prendre un taxi n'as jamis été plus facile! </p>
+        <ion-button fill="solid"  shape="round" class="button" [routerLink]="['/','sign-up-status']">
+          C'est parti!</ion-button>
+      </ion-slide>
+      
+      </ion-slides>
+  
+  
+  </ion-content> 
+  </div> 

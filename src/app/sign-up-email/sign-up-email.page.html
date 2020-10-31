@@ -1,0 +1,39 @@
+<div class="ion-page">
+
+  <ion-content>
+    <ion-label class="title">Taxy up</ion-label>
+    
+    
+    <ion-card class="card">
+    
+  
+    <ion-card-content>
+      <ion-card-title>Inscription</ion-card-title>
+      <ion-label class="i1">Veuillez renseigner votre email et mot de passe</ion-label>
+  
+      <form [formGroup]="signUpForm" >
+  
+       <ion-item class="input">
+        <ion-input clearInput="true" type="email"  placeholder="Email" #email required></ion-input>
+      </ion-item>
+      <ion-item class="input">
+        <ion-input clearInput="true" type="password" placeholder="Password" #pas required></ion-input>
+      </ion-item>
+  
+      
+          <ion-row>
+            <ion-label class="account" [routerLink]="['/','login-email']">Vous avez déjà un compte?</ion-label>
+            
+          </ion-row>
+  
+      <ion-button type="submit" shape="round" fill="outline" class="next" [routerLink]="['/','sign-up-confirm']"  (click)="onPass(email.value, pas.value)" >
+            <ion-icon name="arrow-forward"></ion-icon>
+            Suivant </ion-button>
+            </form>
+  
+    </ion-card-content>
+  </ion-card>
+ 
+  <ion-button shape="round" fill="outline" class="button1" [routerLink]="['/','sign-up-status']"  >RETOUR</ion-button>
+  </ion-content>
+  </div>

@@ -1,0 +1,101 @@
+:root{
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+
+.title{
+    color: #000000;
+    position: absolute;
+    padding: 0px;
+    margin-left: 70px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 70px;
+
+}
+
+.card{
+height: 400px;
+margin-top: 120px;
+}
+ion-card-title{
+    color: #b39200;
+    margin-left: -20vh;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.i1{
+    color: #3d3d3d;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Georgia, serif;
+
+}
+.input{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 40px;
+    --border-color: #ebc000;
+    
+}
+
+
+.next{
+    --border-color: #ebc000;
+    margin-left:15vh;
+    margin-top:3vh;
+    position: relative ;
+    color: #020202;
+    --background-activated:#ffeed9;
+   
+
+}
+
+
+.dif{
+    color: #020202;
+    font-family: American Typewriter, serif;
+    margin-left: 5vh;
+    margin-top: 50px;
+    
+}
+.fb{
+        --background: #282828;
+        margin-left: 30px;
+        margin-top: 10px;
+       margin-bottom: 10px;
+    
+    }
+
+
+.account{
+    color:#949494 ;
+    font-family: American Typewriter, serif;
+    margin-top:5vh;
+    margin-left: 2vh;
+
+}
+.ac2{
+
+    color: #b39200;
+    margin-top:1vh;
+    margin-left: 120px;
+}
+
+.ic{
+    position: relative center;
+}
+.button1{
+    --border-color: #ebc000;
+     color: #000000;
+     margin-left: 120px;
+     margin-top: 20px;
+     font-size: 20px;
+     --background-activated:#fff8d8;
+   }

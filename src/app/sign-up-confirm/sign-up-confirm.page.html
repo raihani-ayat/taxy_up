@@ -1,0 +1,28 @@
+<div class="ion-page">
+  <ion-content>
+    <ion-label class="title">Taxy up</ion-label>
+  
+    <ion-card class="card">
+      <ion-card-title>Confirmation</ion-card-title>
+      <p class="i1">Un email vous a été envoyé pour confirmer votre addresse</p>
+  
+  <ion-row>
+    <ion-label   class="lab"> Vous n'avez pas reçu d'email?</ion-label>
+  </ion-row>
+  
+  <ion-button fill="outline" class="code" shape="round" (click)="OnResend()">Ré-envoyer</ion-button>
+  
+   
+  
+  
+    </ion-card>
+  
+    
+   <ion-button  shape="round" fill="outline" class="but" [routerLink]="['/','sign-up-email']" routerDirection="backward">Retour </ion-button>
+  
+    
+    <ion-button shape="round" fill="outline"class="but" (click)="onNext()"> Suivant</ion-button>
+  
+  
+  </ion-content>
+  </div>

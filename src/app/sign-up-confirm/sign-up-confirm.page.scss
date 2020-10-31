@@ -1,0 +1,77 @@
+:root{
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+
+ion-content{
+    --background: #ffffff; 
+}
+.title{
+    color: #000000;
+    position: absolute;
+    padding: 0px;
+    margin-left: 70px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 70px;
+
+}
+
+.card{
+height: 400px;
+margin-top: 120px;
+}
+ion-card-title{
+    color: #b39200;
+    margin-left: -20vh;
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.i1{
+    color: #3d3d3d;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: Georgia, serif;
+
+}
+.input{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 40px;
+    --border-color:  #ebc000 ;
+    
+}
+
+.lab{
+    color: #000000;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    margin-top:70px;
+    margin-left: 5vh;
+}
+
+
+
+.but{
+    margin-left: 30px;
+    --border-color: #000000;
+    font-family: Georgia, serif;
+    color: #000000; 
+    --background-activated:#fff8d8;
+}
+.code{
+    margin-left: 15vh;
+    margin-top: 25px;
+    --border-color: #ebc000;
+    font-size: 15px;
+    font-family: Georgia, serif;
+    color:#3d3d3d ;
+    --background-activated:#fff8d8;
+
+}

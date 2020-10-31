@@ -1,0 +1,86 @@
+:root{
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+ion-content{
+    --background: none;
+    background-image: url('/assets/cabi.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ion-card{
+    --background:#ffffff;
+    height: 350px;
+    margin-top: 300px;
+}
+
+ion-card-title{
+    color: #b39200;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+ion-card-subtitle{
+    color: #3d3d3d;
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+.title{
+    color: #ffffff;
+    position: absolute;
+    padding: 0px;
+
+    margin-left: 90px;
+
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 70px;
+
+}
+.ic{
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 50px;
+}
+.ic2{
+    margin-right: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 50px;
+}
+.button{
+ --border-color: #ebc000;
+  color: #000000;
+  margin-left: 40px;
+  margin-top: 30px;
+  font-size: 20px;
+  --background-activated:#fff8d8;
+}
+
+.button2{
+    --border-color: #ebc000;
+     color: #000000;
+     margin-left: 8vh;
+     margin-top: 30px;
+     font-size: 20px;
+     --background-activated:#fff8d8;
+   }
+
+   .button1{
+    --border-color: #ebc000;
+     color: #000000;
+     margin-left: 120px;
+     margin-top: 20px;
+     font-size: 20px;
+     --background-activated:#fff8d8;
+   }

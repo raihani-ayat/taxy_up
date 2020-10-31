@@ -1,0 +1,92 @@
+<ion-menu side="start" content-id="menu1">
+  <ion-header>
+    <ion-toolbar transclusent>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+
+      <ion-item>
+        <ion-icon name="star-sharp" slot="start"></ion-icon>
+        <ion-label>Notifications</ion-label>
+      </ion-item>
+
+      
+
+      <ion-item>
+        <ion-icon name="time-sharp" slot="start"></ion-icon>
+        <ion-label>Mes voyages</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="information-sharp" slot="start"></ion-icon>
+        <ion-label>A propos de nous</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="help-sharp" slot="start"></ion-icon>
+        <ion-label>Aide</ion-label>
+      </ion-item>
+
+      <ion-item (click)="onSignOut()">
+        <ion-icon name="log-out-sharp" slot="start"></ion-icon>
+        <ion-label >Se déconnecter</ion-label>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="menu1">
+    <ion-content>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button class="ic" auto-hide="false"></ion-menu-button>
+        </ion-buttons>
+    
+    
+        <ion-title class="title">Taxy up</ion-title>
+      </ion-toolbar>
+      <ion-card>
+      <ion-card-title> Nouveau passager </ion-card-title>
+      <ion-card-content>
+        <ion-item class="inp">
+          <ion-input  clearInput="true" type="text" placeholder="Ma localisation"></ion-input>
+          <ion-button fill="clear">
+            <ion-icon class="ic" name="locate-sharp"></ion-icon>
+          </ion-button>
+          
+        </ion-item>
+
+        
+        <ion-buttons>
+          <ion-button fill="outline" class="but" (click)="onPickLocation()"> Choisir une localisation</ion-button>
+        </ion-buttons>
+      </ion-card-content>
+  
+      
+    </ion-card>
+<div class="picker">
+   <ion-spinner *ngIf="isLoading"></ion-spinner>
+    <ion-img role="ion-button" (click)="onPickLocation()" class="map-img" [src]="selectedLocation" *ngIf="selectedLocation && !isLoading"></ion-img>
+</div>    
+    </ion-content>
+    <ion-footer>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button [routerLink]="['/','driver']">
+            <ion-icon name="home-sharp" class="ic"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    
+        <ion-buttons slot="primary">
+          <ion-button [routerLink]="['/','driver','profile']">
+            <ion-icon name="person-circle-sharp" class="ic"  ></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+      
+    </ion-footer>
+</div>
