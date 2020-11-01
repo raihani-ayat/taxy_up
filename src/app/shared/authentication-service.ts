@@ -7,8 +7,8 @@ import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angula
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 import {StatusService} from './status.service'
 import { Observable } from 'rxjs';
-import { Rider } from './rider';
-import { Driver } from './driver';
+import { Rider, AvaiableRider } from './rider';
+import { AvailableDriver, Driver } from './driver';
 
 
 @Injectable({
@@ -24,6 +24,9 @@ export class AuthenticationService implements OnInit {
   obs:Observable<any>;
   riderObs:Observable<any>;
   driverObs:Observable<any>;
+  availableDriverObs:Observable<any>;
+  availableRiderObs:Observable<any>;
+  closestRider:AvaiableRider;
 
 
   constructor(
@@ -35,7 +38,11 @@ export class AuthenticationService implements OnInit {
     public db: AngularFireDatabase
   ){ this.obs=this.afStore.collection('users').valueChanges();
   this.riderObs=this.afStore.collection('riders').valueChanges();
-  this.driverObs=this.afStore.collection('drivers').valueChanges();}
+  this.driverObs=this.afStore.collection('drivers').valueChanges();
+  this.availableDriverObs=this.afStore.collection('AvailableDrivers').valueChanges();
+  this.availableRiderObs=this.afStore.collection('AvailableRiders').valueChanges();
+
+  }
   ngOnInit(){
     this.GetCurrentUser(); 
     this.ngFireAuth.authState.subscribe(user => {
@@ -199,6 +206,42 @@ export class AuthenticationService implements OnInit {
   GetDriverProfile(){
     this.GetCurrentUser();
     return this.driverObs;
+  }
+
+  //adding an available driver
+
+  SetAvailableDriver(driver:AvailableDriver){
+    this.GetCurrentUser();
+    const userRef: AngularFirestoreDocument<any> = this.afStore.doc(`/AvailableDrivers/`+this.uid);
+    const userData: AvailableDriver = {
+      uid:driver.uid,
+      lat:driver.lat,
+      lng:driver.lng,
+      address:driver.address
+    }
+    return userRef.set(userData, {merge: true})
+
+  }
+  GetAvailableDriverData(){
+    this.GetCurrentUser();
+    return this.availableDriverObs;
+  }
+
+  SetAvailableRiDer(rider:AvaiableRider){
+    this.GetCurrentUser();
+    const userRef: AngularFirestoreDocument<any> = this.afStore.doc(`/AvailableDrivers/`+this.uid);
+    const userData: AvailableDriver = {
+      uid:rider.uid,
+      lat:rider.lat,
+      lng:rider.lng,
+      address:rider.address
+    }
+    return userRef.set(userData, {merge: true})
+
+  }
+  GetAvailableRiderData(){
+    this.GetCurrentUser();
+    return this.availableRiderObs;
   }
 
   

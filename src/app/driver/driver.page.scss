@@ -78,9 +78,22 @@ ion-card-subtitle{
     max-width: 80%;
     height: 20rem;
     max-height: 30vh;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-bottom: 10px;
     border: 1px solid #000000;
-    margin: auto;
+    //margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.spinner{  
+    margin-top: 20px;
+    margin-left: 180px;  
+}
+
+.card{
+    margin-top: 50px;
+    
 }

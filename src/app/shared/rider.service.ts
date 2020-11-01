@@ -33,46 +33,4 @@ export class RiderService{
     
   }
 
-
-  
-
-  
-  /*Create
-  createBooking(rider:Rider) {
-    return this.RiderListRef.push({
-      fName: rider.f_name,
-      lName: rider.l_name,
-      mobile: rider.tel,
-      address: rider.adrs,
-    })
-  }
-
-  // Get Single
-  getBooking() {
-    this.RiderRef = this.db.object('/Riders/');
-    return this.RiderRef;
-  }
-
-  // Get List
-  getBookingList() {
-    this.RiderListRef = this.db.list('/Riders');
-    return this.RiderListRef;
-  }
-
-  // Update
-  updateBooking(id, rider: Rider) {
-    return this.RiderRef.update({
-        fName: rider.f_name,
-        lName: rider.l_name,
-        mobile: rider.tel,
-        address: rider.adrs,
-    })
-  }
-
-  // Delete
-  deleteBooking(id: string) {
-    this.RiderRef = this.db.object('/Riders/' + id);
-    this.RiderRef.remove();
-  }*/
-
 }

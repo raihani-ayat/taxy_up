@@ -1,3 +1,6 @@
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuDs5aQb2hVSwH_r6Cs3Y4rclgDIiB59E&libraries=geometry"></script>
+
 <ion-menu side="start" content-id="menu1">
   <ion-header>
     <ion-toolbar transclusent>
@@ -53,7 +56,7 @@
       <ion-card-title> Nouveau passager </ion-card-title>
       <ion-card-content>
         <ion-item class="inp">
-          <ion-input  clearInput="true" type="text" placeholder="Ma localisation"></ion-input>
+          <ion-input  clearInput="true" type="text" placeholder="Ma localisation" > {{address}}</ion-input>
           <ion-button fill="clear">
             <ion-icon class="ic" name="locate-sharp"></ion-icon>
           </ion-button>
@@ -68,10 +71,18 @@
   
       
     </ion-card>
+
+    <ion-card class="card">
 <div class="picker">
    <ion-spinner *ngIf="isLoading"></ion-spinner>
     <ion-img role="ion-button" (click)="onPickLocation()" class="map-img" [src]="selectedLocation" *ngIf="selectedLocation && !isLoading"></ion-img>
 </div>    
+    </ion-card>
+<ion-button fill="outline" class="but" *ngIf="validate" (click)="onValidateLocation()"> Valider ma localisation</ion-button>
+
+<div>
+  <ion-spinner class="spinner" *ngIf="validating"></ion-spinner>
+</div>
     </ion-content>
     <ion-footer>
       <ion-toolbar>

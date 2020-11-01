@@ -14,3 +14,11 @@ export class Driver{
     nSeats:string;
     liscence:string;
 }
+
+export class AvailableDriver{
+    uid:string;
+    lat:number;
+    lng:number;
+    address:string;
+    
+}

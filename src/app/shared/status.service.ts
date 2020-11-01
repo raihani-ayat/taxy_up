@@ -43,20 +43,7 @@ export class StatusService{
 
     }
 
-      /* Create
-  createUser(userr:Users) {
-      
-      this.userListRef=this.db.list('/Users');
-      if(userr){
-          userr.status=status;
-          this.userListRef.push({
-              status:userr.status,
-          });
-      }   
-      return this.userListRef.push({
-      status: this.status,
-    })
-  }*/
+    
 
    //Get Single
   getUsers() {
@@ -73,32 +60,6 @@ export class StatusService{
     return this.userRef
   }
   
-    /*this.userRef = this.db.object( '/Users/'+this.id);
-    console.log(this.userRef);
-    return this.userRef;*/
     
-
-  
-
-  /* Get List
-  getBookingList() {
-    this.bookingListRef = this.db.list('/appointment');
-    return this.bookingListRef;
-  }
-
-  // Update
-  updateBooking(id, apt: Appointment) {
-    return this.bookingRef.update({
-      name: apt.name,
-      email: apt.email,
-      mobile: apt.mobile
-    })
-  }
-
-  // Delete
-  deleteBooking(id: string) {
-    this.bookingRef = this.db.object('/appointment/' + id);
-    this.bookingRef.remove();
-  }*/
 
 }
